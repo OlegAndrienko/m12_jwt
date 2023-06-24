@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "m12-jwt"
+version = "0.1.0"
+description = ""
+authors = ["OlegAndrienko <OlegAndrienko@gmail.com>"]
+readme = "README.md"
+packages = [{include = "m12_jwt"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.97.0"
+sqlalchemy = "^2.0.16"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
